@@ -62,4 +62,15 @@
     <string name="next_day_ground_delivery">Next day ground delivery</string>
     <string name="pick_up">Pick up</string>
 
+    <string name="city_label_text">City</string>
+    <string-array name="city_options">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Cimahi</item>
+        <item>Surabaya</item>
+        <item>Yogyakarta</item>
+    </string-array>
+    <string name="note_label">Notes</string>
+    <string name="enter_note_hint">Tambahkan catatan pesanan anda</string>
+
 </resources>

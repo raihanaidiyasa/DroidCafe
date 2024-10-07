@@ -2,8 +2,10 @@ package com.example.droidcafe
 
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.RadioButton
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +17,12 @@ class OrderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_order)
+
+        val cityspinner = findViewById<Spinner>(R.id.city_spinner)
+        val selectedcity = cityspinner.selectedItem.toString()
+
+        val note = findViewById<EditText>(R.id.note_text)
+        val notes_text = note.text.toString()
     }
     fun onRadioButtonClicked(view: View) {
         val checked = (view as RadioButton).isChecked
@@ -30,6 +38,7 @@ class OrderActivity : AppCompatActivity() {
 
             else -> {}
         }
+
     }
     private fun displayToast(message: String) {
         Toast.makeText(
